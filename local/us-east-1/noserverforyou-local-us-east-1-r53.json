@@ -1,0 +1,20 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Resources": {
+        "R53HZROOT": {
+            "Type": "AWS::Route53::HostedZone",
+            "Properties": {
+                "Name": "noserverforyou.com",
+                "HostedZoneConfig": {
+                    "Comment": "The root hosted zone for noserverforyou.com."
+                },
+                "HostedZoneTags": [
+                    {
+                        "Key": "app",
+                        "Value": "noserverforyou"
+                    }
+                ]
+            }
+        }
+    }
+}
